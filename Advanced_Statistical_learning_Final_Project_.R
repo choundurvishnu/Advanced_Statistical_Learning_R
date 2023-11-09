@@ -136,7 +136,7 @@ train <- mush_fact[trainIndex, ]
 test <- mush_fact[-trainIndex, ]
 
 
--------##### Testing with Reduced Model ####-------------------------------
+#####--------------- Testing with Reduced Model ####-------------------------------
 ## Logistic Regression
 train$class <- as.factor(train$class)
 #lm_cn <- glm(class~.-stem.root-gill.attachment-stem.surface-gill.spacing-veil.type , family = binomial, data = train)   #-stem.color-stem.width-veil.type-does.bruise.or.bleed-cap.surface-veil.color-stem.root
@@ -222,7 +222,7 @@ col = c(NA,"red" , "black", "blue","darkgreen"),
 lwd = 2, 
 cex = 0.7)
 
-----------------##### Training with Reduced Model ####------------------------------- 
+#####------------------ Training with Reduced Model ####------------------------------- 
 
 ## Logistic Regression
 lm_cn <- glm(class~. - stem.root - gill.attachment - stem.surface - gill.spacing - veil.type , family = binomial, data = train)   #-stem.color-stem.width-veil.type-does.bruise.or.bleed-cap.surface-veil.color-stem.root
@@ -306,7 +306,7 @@ lwd = 2,
 cex = 0.7)
 
 
----------------######--- Reduced Model with Completed Data---------------####---------------------------
+######------------------- Reduced Model with Completed Data---------------####---------------------------
 
 ## Logistic Regression
 lm_cn <- glm(class~. - stem.root - gill.attachment - stem.surface - gill.spacing - veil.type , family = binomial, data = mush_fact)   #-stem.color-stem.width-veil.type-does.bruise.or.bleed-cap.surface-veil.color-stem.root
@@ -392,7 +392,7 @@ cex = 0.7)
 
 
 
-##### Training with Full Model ####-------------------------------
+#####-------------------Training with Full Model ####-------------------------------
 
 
 
@@ -484,7 +484,7 @@ cex = 0.7)
 
 
 
-------------------#Testing full model----------------------
+###----------------------------Testing full model----------------------
 
 
 
@@ -573,7 +573,7 @@ cex = 0.7)
 
 
 
-------------------# full model with complete Data----------------------
+####------------------ full model with complete Data----------------------
 
 
 
